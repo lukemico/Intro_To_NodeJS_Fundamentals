@@ -1,5 +1,7 @@
 // Functions used in Egghead.io callbacks lesson.
 
+// Lesson 2 - Understand Callbacks in Node.js
+
 // define a simple Javascript function
 var welcomeMsg = function() {
 	console.log("Welcome to the Great Underground Empire!");
@@ -22,7 +24,6 @@ var look = function(dir) {
 };
 
 // define another function, that gruoups operations by name e.g. 'walk'
-
 var walk = function(dir) {
 	if (dir === "west") {
 		console.log("It is very dark, you are likely to be eaten by a grue!");
