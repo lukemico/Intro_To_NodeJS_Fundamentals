@@ -1,0 +1,10 @@
+{ AcceptRanges: 'bytes',
+  LastModified: 2017-03-29T00:14:08.000Z,
+  ContentLength: 46932816,
+  ETag: '"624062b6df66799b753bbbf2285d02a8"',
+  VersionId: 'null',
+  ContentType: 'audio/mp3',
+  Metadata: {},
+  Body: <Buffer ff fb 94 64 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 58 69 6e 67 00 00 00
+0f 00 01 4a 33 02 cc ... > }
+
