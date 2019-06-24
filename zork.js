@@ -81,3 +81,45 @@ buf.write('yyyy', 2, 1, 'utf8')
 1
 buf.toString()
 'heyel'
+
+
+buf1 = new Buffer('1234')
+<Buffer 31 32 33 34>
+(node:3229) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+buf2 = new Buffer('0123')
+<Buffer 30 31 32 33>
+buf3 = new Buffer('1234')
+<Buffer 31 32 33 34>
+buf1.compare(buf2)
+1
+buf1.compare(buf3)
+0
+buf1.equals(buf2)
+false
+buf1.equals(buf3)
+true
+var arr = [buf1, buf2]
+undefined
+arr.sort(Buffer.compare)
+[ <Buffer 30 31 32 33>, <Buffer 31 32 33 34> ]
+buf.toJSON()
+Thrown:
+ReferenceError: buf is not defined
+buf = new Buffer(5)
+<Buffer 00 00 00 00 00>
+buf.write('hello world')
+5
+buf.toJSON()
+{ type: 'Buffer', data: [ 104, 101, 108, 108, 111 ] }
+buf1 = new Buffer('Hello World!')
+<Buffer 48 65 6c 6c 6f 20 57 6f 72 6c 64 21>
+buf2 = buf1.slice(0, 3)
+<Buffer 48 65 6c>
+buf2.toString()
+'Hel'
+buf2.write('xxx')
+3
+buf2.toString()
+'xxx'
+buf1.toString()
+'xxxlo World!'
