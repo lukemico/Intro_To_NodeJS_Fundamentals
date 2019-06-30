@@ -1,0 +1,19 @@
+{
+	"name": "sayhelloworld",
+	"version": "0.1.0",
+	"description": "Write Hello World out to the console",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lukemico/Intro_To_NodeJS_Fundamentals.git"
+	},
+	"keywords": [
+		"hello",
+		"world"
+	],
+	"author": "Luke Mico",
+	"license": "MIT"
+}
